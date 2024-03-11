@@ -27,6 +27,7 @@ public class User {
     private List<Follow> followers;
     @OneToMany(cascade = CascadeType.REMOVE)
     private List<Follow> followed;
-    //private List<User> blockedUsers;
+    @ManyToMany
+    private List<User> blockedUsers;
     private String bio;
 }
