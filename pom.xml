@@ -11,6 +11,9 @@
     <modules>
         <module>common-jpa</module>
         <module>dispatcher</module>
+        <module>security-service</module>
+        <module>eureka-service</module>
+        <module>api-gateway</module>
     </modules>
 
     <parent>
