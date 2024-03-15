@@ -15,7 +15,7 @@ public class TestController {
     private final UserRepository userRepository;
 
     @GetMapping("/user/{id}")
-    public User getUser(@RequestParam(name = "id") String id){
+    public User getUser(@PathVariable(name = "id") String id){
         return userRepository.findById(UUID.fromString(id))
                 .orElseThrow(()-> new RuntimeException("User not found!"));
     }
@@ -37,7 +37,7 @@ public class TestController {
 
     @PostMapping("/user/update/{id}")
     public User updateUser(@RequestBody UserUpdateDto userUpdateDto,
-                           @RequestParam(name = "id") String id){
+                           @PathVariable(name = "id") String id){
         User user = getUser(id);
         user.setServerUrl(userUpdateDto.getServerUrl());
         user.setIngressId(userUpdateDto.getIngressId());

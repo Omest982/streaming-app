@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/dto/UserUpdateDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/repository/UserRepository.java" afterDir="false" />
+    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Added test user endpoints.">
       <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +99,23 @@
       <option name="presentableId" value="Default" />
       <updated>1709829709980</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added test user endpoints.">
+      <option name="closed" value="true" />
+      <created>1710503384420</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710503384420</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added test user endpoints.">
+      <option name="closed" value="true" />
+      <created>1710503416116</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710503416116</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,5 +128,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added test user endpoints." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test user endpoints." />
   </component>
 </project>
