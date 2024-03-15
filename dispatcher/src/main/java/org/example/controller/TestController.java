@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 
 @RestController
+@CrossOrigin(value = "localhost:3000")
 @RequiredArgsConstructor
 public class TestController {
     private final UserRepository userRepository;
@@ -43,7 +44,7 @@ public class TestController {
         user.setIngressId(userUpdateDto.getIngressId());
         user.setStreamKey(userUpdateDto.getStreamKey());
 
-        return user;
+        return userRepository.save(user);
     }
     @GetMapping
     public String test(){

@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Added test user endpoints.">
+    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Fixe.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/TestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,24 +38,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.DispatcherApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.common-jpa [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.dispatcher [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.dispatcher [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.streaming-app [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Коды/streaming-app&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DispatcherApplication.executor": "Run",
+    "Maven.common-jpa [clean].executor": "Run",
+    "Maven.common-jpa [install].executor": "Run",
+    "Maven.dispatcher [clean].executor": "Run",
+    "Maven.dispatcher [install].executor": "Run",
+    "Maven.streaming-app [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "G:/Коды/streaming-app",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Коды\streaming-app" />
@@ -115,7 +117,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710503416116</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixe.">
+      <option name="closed" value="true" />
+      <created>1710503630318</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710503630318</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixe.">
+      <option name="closed" value="true" />
+      <created>1710503654202</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710503654202</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +149,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added test user endpoints." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test user endpoints." />
+    <MESSAGE value="Fixe." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixe." />
   </component>
 </project>
