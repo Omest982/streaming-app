@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 
 @RestController
-@CrossOrigin(value = "localhost:3000")
+@CrossOrigin(value = "http://localhost:3000")
 @RequiredArgsConstructor
 public class TestController {
     private final UserRepository userRepository;
