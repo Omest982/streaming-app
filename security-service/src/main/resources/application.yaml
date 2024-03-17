@@ -1,7 +1,6 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+jwt:
+  secret: CRClPakWbPafJH12umy4hdV4MNNeutKv62UjIsg278Uh4nfj7sfhefHUFIWAyhfisfs83h23qwr29r32r
+  expiration: 6000000
 
 spring:
   config:
@@ -14,11 +13,14 @@ spring:
   jpa:
     generate-ddl: true
     hibernate:
-      ddl-auto: validate
+      ddl-auto: create-drop
   application:
-    name: dispatcher
+    name: security-service
 
 server:
-  port: ${DISPATCHER_PORT}
+  port: ${SECURITY_SERVICE_PORT}
 
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

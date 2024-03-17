@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: api-gateway
+  config:
+    import: optional:file:.env[.properties]
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: dispatcher
+          uri: lb://DISPATCHER
+          predicates:
+            - Path=/dispatcher/**
+          filters:
+            - StripPrefix=1
+            - AuthFilter
+
+        - id: security-service
+          uri: lb://SECURITY-SERVICE
+          predicates:
+            - Path=/auth/**
+          filters:
+            - StripPrefix=1
+
+server:
+  port: ${API_GATEWAY_PORT}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
