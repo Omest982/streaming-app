@@ -4,31 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Created security service logic.&#10;Refactored code.">
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/enums/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/SecurityServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/config/JwtConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/dto/AuthRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/dto/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/jwt/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/mapper/UserUserInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/security/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/service/UserInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Created security service logic.&#10;Refactored some code.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/org/example/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/org/example/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,9 +142,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.SecurityServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.EurekaServiceApplication" />
         <item itemvalue="Application.DispatcherApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
       </list>
     </recent_temporary>
@@ -178,6 +165,15 @@
       <option name="presentableId" value="Default" />
       <updated>1709829709980</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created security service logic.&#10;Refactored some code.">
+      <option name="closed" value="true" />
+      <created>1710699584333</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710699584333</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,5 +198,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created security service logic.&#10;Refactored some code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created security service logic.&#10;Refactored some code." />
   </component>
 </project>
