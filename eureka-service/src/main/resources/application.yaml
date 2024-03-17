@@ -8,5 +8,7 @@ eureka:
       defaultZone: http://${EUREKA_HOST}:${EUREKA_PORT}/eureka/
 
 spring:
+  config:
+    import: optional:file:.env[.properties]
   application:
     name: eureka-service

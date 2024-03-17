@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Fixe.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/resources/application.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Refactored docker." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,22 +62,23 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-19",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Github/streaming-app/security-service/src/main/java/org/example/jwt",
+    "last_opened_file_path": "C:/Github/streaming-app/eureka-service",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Github\streaming-app\eureka-service" />
+      <recent name="C:\Github\streaming-app\security-service" />
+      <recent name="C:\Github\streaming-app\api-gateway" />
       <recent name="C:\Github\streaming-app\security-service\src\main\java\org\example\jwt" />
       <recent name="G:\Коды\streaming-app" />
-      <recent name="G:\Коды\streaming-app\common-jpa" />
-      <recent name="C:\Github\streaming-app\dispatcher\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ApiGatewayApplication">
+  <component name="RunManager" selected="Application.DispatcherApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -137,10 +133,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.DispatcherApplication" />
-        <item itemvalue="Application.SecurityServiceApplication" />
         <item itemvalue="Application.EurekaServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.SecurityServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
       </list>
     </recent_temporary>
@@ -177,7 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710702095379</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactored code.">
+      <option name="closed" value="true" />
+      <created>1710707089392</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710707089392</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactored docker.">
+      <option name="closed" value="true" />
+      <created>1710710957879</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710710957880</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,6 +218,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created security service logic.&#10;Refactored some code." />
     <MESSAGE value="Fixe." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixe." />
+    <MESSAGE value="Refactored code." />
+    <MESSAGE value="Refactored docker." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored docker." />
   </component>
 </project>

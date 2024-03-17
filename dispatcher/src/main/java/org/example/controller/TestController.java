@@ -15,13 +15,13 @@ import java.util.UUID;
 public class TestController {
     private final UserService userService;
 
-    @GetMapping("/user")
-    public User getUserById(@RequestParam(name = "id") String id){
+    @GetMapping("/user/id/{id}")
+    public User getUserById(@PathVariable String id){
         return userService.getUserById(UUID.fromString(id));
     }
 
-    @GetMapping("/user")
-    public User getUserByUsername(@RequestParam(name = "username") String username){
+    @GetMapping("/user/username/{username}")
+    public User getUserByUsername(@PathVariable String username){
         return userService.getUserByUsername(username);
     }
 
@@ -40,9 +40,9 @@ public class TestController {
         return userService.saveUser(user);
     }
 
-    @PostMapping("/user/update")
+    @PostMapping("/user/update/{id}")
     public UUID updateUser(@RequestBody UserUpdateDto userUpdateDto,
-                           @RequestParam(name = "id") String id){
+                           @PathVariable String id){
         User user = getUserById(id);
         user.setServerUrl(userUpdateDto.getServerUrl());
         user.setIngressId(userUpdateDto.getIngressId());
