@@ -16,7 +16,7 @@ spring:
             - StripPrefix=1
 
 server:
-  port: 8080
+  port: ${API_GATEWAY_PORT}
 
 eureka:
   client:
