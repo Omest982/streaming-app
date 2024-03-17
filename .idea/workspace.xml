@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Created security service logic.&#10;Refactored some code.">
+    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Fixe.">
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/config/ApiGatewayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/filter/AuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/filter/RouteValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dispatcher/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/org/example/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/org/example/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +82,7 @@
       <recent name="org.example.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SecurityServiceApplication">
+  <component name="RunManager" selected="Application.ApiGatewayApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -141,10 +137,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SecurityServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.EurekaServiceApplication" />
         <item itemvalue="Application.DispatcherApplication" />
+        <item itemvalue="Application.SecurityServiceApplication" />
+        <item itemvalue="Application.EurekaServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
       </list>
     </recent_temporary>
@@ -173,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710699584333</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixe.">
+      <option name="closed" value="true" />
+      <created>1710702095379</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710702095379</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +205,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created security service logic.&#10;Refactored some code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created security service logic.&#10;Refactored some code." />
+    <MESSAGE value="Fixe." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixe." />
   </component>
 </project>

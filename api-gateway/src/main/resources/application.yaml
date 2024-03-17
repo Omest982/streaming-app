@@ -16,6 +16,7 @@ spring:
             - Path=/dispatcher/**
           filters:
             - StripPrefix=1
+            - AuthFilter
 
         - id: security-service
           uri: lb://SECURITY-SERVICE
