@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Fixe.">
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/config/ApiGatewayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/filter/AuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/filter/RouteValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-jpa/src/main/java/org/example/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dispatcher/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +24,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/security-service" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -48,29 +48,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DispatcherApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EurekaServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SecurityServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.common-jpa [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.common-jpa [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.dispatcher [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.dispatcher [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.streaming-app [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.streaming-app [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;security-service&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Github/streaming-app/security-service/src/main/java/org/example/jwt&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ApiGatewayApplication.executor": "Run",
+    "Application.DispatcherApplication.executor": "Run",
+    "Application.EurekaServiceApplication.executor": "Run",
+    "Application.SecurityServiceApplication.executor": "Run",
+    "Maven.common-jpa [clean].executor": "Run",
+    "Maven.common-jpa [install].executor": "Run",
+    "Maven.dispatcher [clean].executor": "Run",
+    "Maven.dispatcher [install].executor": "Run",
+    "Maven.streaming-app [clean].executor": "Run",
+    "Maven.streaming-app [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Github/streaming-app/security-service/src/main/java/org/example/jwt",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Github\streaming-app\security-service\src\main\java\org\example\jwt" />

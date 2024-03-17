@@ -2,6 +2,7 @@ package org.example.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.example.entity.enums.UserRole;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
@@ -18,9 +19,7 @@ import java.util.UUID;
 @Table(name = "users")
 public class User {
     @Id
-    @GeneratedValue(generator = "UUID")
-    @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
-    @Column(name = "user_id", updatable = false, nullable = false)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private String username;
     private String email;
@@ -30,6 +29,9 @@ public class User {
     private String serverUrl;
     private String streamKey;
     private String ingressId;
+
+    @Enumerated(value = EnumType.STRING)
+    private UserRole userRole;
 
     private String thumbnaiUrl;
 //    @OneToOne
