@@ -7,8 +7,6 @@ services:
     restart: unless-stopped
     ports:
       - ${DB_PORT}:${DB_PORT}
-    expose:
-      - ${DB_PORT}
     environment:
       - POSTGRES_DB=${DB_NAME}
       - POSTGRES_USER=${DB_USERNAME}
@@ -18,13 +16,12 @@ services:
     container_name: dispatcher
     depends_on:
       - streaming-app-db
+      - eureka-service
     restart: on-failure
     image: dispatcher
     build: /dispatcher/.
     ports:
       - ${DISPATCHER_PORT}:${DISPATCHER_PORT}
-    expose:
-      - ${DISPATCHER_PORT}
     environment:
       - DISPATCHER_PORT=${DISPATCHER_PORT}
       - DB_NAME=${DB_NAME}
@@ -32,3 +29,50 @@ services:
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_HOST=streaming-app-db
       - DB_PORT=${DB_PORT}
+      - EUREKA_HOST=host.docker.internal
+      - EUREKA_PORT=${EUREKA_PORT}
+
+  eureka-service:
+    container_name: eureka-service
+    restart: on-failure
+    image: eureka-service
+    build: /eureka-service/.
+    ports:
+      - ${EUREKA_PORT}:${EUREKA_PORT}
+    environment:
+      - EUREKA_HOST=host.docker.internal
+      - EUREKA_PORT=${EUREKA_PORT}
+
+  api-gateway:
+    container_name: api-gateway
+    depends_on:
+      - eureka-service
+    restart: on-failure
+    image: api-gateway
+    build: /api-gateway/.
+    ports:
+      - ${API_GATEWAY_PORT}:${API_GATEWAY_PORT}
+    environment:
+      - API_GATEWAY_PORT=${API_GATEWAY_PORT}
+      - EUREKA_HOST=host.docker.internal
+      - EUREKA_PORT=${EUREKA_PORT}
+
+  security-service:
+    container_name: security-service
+    depends_on:
+      - streaming-app-db
+      - eureka-service
+    restart: on-failure
+    image: security-service
+    build: /security-service/.
+    ports:
+      - ${SECURITY_SERVICE_PORT}:${SECURITY_SERVICE_PORT}
+    environment:
+      - SECURITY_SERVICE_PORT=${SECURITY_SERVICE_PORT}
+      - DB_NAME=${DB_NAME}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=streaming-app-db
+      - DB_PORT=${DB_PORT}
+      - EUREKA_HOST=host.docker.internal
+      - EUREKA_PORT=${EUREKA_PORT}
