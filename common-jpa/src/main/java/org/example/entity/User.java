@@ -32,15 +32,15 @@ public class User {
 
     @Enumerated(value = EnumType.STRING)
     private UserRole userRole;
-
     private String thumbnaiUrl;
-//    @OneToOne
-//    private UserStream userStream;
-//    @OneToMany(cascade = CascadeType.REMOVE)
-//    private List<Follow> followers;
-//    @OneToMany(cascade = CascadeType.REMOVE)
-//    private List<Follow> followed;
-//    @ManyToMany
-//    private List<User> blockedUsers;
-//    private String bio;
+
+    @OneToOne
+    private UserStream userStream;
+    @OneToMany(cascade = CascadeType.REMOVE)
+    private List<Follow> followers;
+    @OneToMany(cascade = CascadeType.REMOVE)
+    private List<Follow> followed;
+    @ManyToMany
+    private List<User> blockedUsers;
+    private String bio;
 }

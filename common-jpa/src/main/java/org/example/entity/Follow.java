@@ -7,6 +7,7 @@ import java.util.UUID;
 @Entity
 public class Follow {
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     @ManyToOne
     private User followedBy;

@@ -1,8 +1,6 @@
 package org.example.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 
 import java.util.List;
 import java.util.UUID;
@@ -10,6 +8,7 @@ import java.util.UUID;
 @Entity
 public class Chat {
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private boolean isDelayed;
     private boolean isOnlyFollowed;

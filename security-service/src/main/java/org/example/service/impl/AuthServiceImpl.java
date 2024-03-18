@@ -48,7 +48,7 @@ public class AuthServiceImpl implements AuthService {
         if (userService.isUserExistsByUsernameOrEmail(
                 registerRequest.getUsername(),
                 registerRequest.getEmail())){
-            return null;
+            throw new RuntimeException("User with this email or username already exists!");
         }
 
         User user = User.builder()

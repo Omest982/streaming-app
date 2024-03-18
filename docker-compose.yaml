@@ -29,7 +29,7 @@ services:
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_HOST=streaming-app-db
       - DB_PORT=${DB_PORT}
-      - EUREKA_HOST=host.docker.internal
+      - EUREKA_HOST=eureka-service
       - EUREKA_PORT=${EUREKA_PORT}
 
   eureka-service:
@@ -40,7 +40,7 @@ services:
     ports:
       - ${EUREKA_PORT}:${EUREKA_PORT}
     environment:
-      - EUREKA_HOST=host.docker.internal
+      - EUREKA_HOST=${EUREKA_HOST}
       - EUREKA_PORT=${EUREKA_PORT}
 
   api-gateway:
@@ -54,7 +54,7 @@ services:
       - ${API_GATEWAY_PORT}:${API_GATEWAY_PORT}
     environment:
       - API_GATEWAY_PORT=${API_GATEWAY_PORT}
-      - EUREKA_HOST=host.docker.internal
+      - EUREKA_HOST=eureka-service
       - EUREKA_PORT=${EUREKA_PORT}
 
   security-service:
@@ -74,5 +74,5 @@ services:
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_HOST=streaming-app-db
       - DB_PORT=${DB_PORT}
-      - EUREKA_HOST=host.docker.internal
+      - EUREKA_HOST=eureka-service
       - EUREKA_PORT=${EUREKA_PORT}
