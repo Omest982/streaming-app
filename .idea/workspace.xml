@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Refactored code.&#10;Refactored docker files." />
+    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Fixed cors.">
+      <change afterPath="$PROJECT_DIR$/eureka-service/src/main/java/org/example/config/EurekaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-service/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710761988673</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed cors.">
+      <option name="closed" value="true" />
+      <created>1710767219744</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710767219744</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,6 +250,7 @@
     <MESSAGE value="Refactored docker." />
     <MESSAGE value="Fix." />
     <MESSAGE value="Refactored code.&#10;Refactored docker files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored code.&#10;Refactored docker files." />
+    <MESSAGE value="Fixed cors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed cors." />
   </component>
 </project>
