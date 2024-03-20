@@ -12,6 +12,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.annotation.web.configurers.LogoutConfigurer;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
@@ -30,11 +31,14 @@ public class WebSecurityConfig {
                 .authorizeHttpRequests((requests) -> requests
                                 .requestMatchers("/authenticate",
                                         "/register",
-                                        "/validate").permitAll()
+                                        "/validate",
+                                        "/user/**").permitAll()
                                 //.anyRequest().permitAll()
                                 //.requestMatchers("/auth/**").permitAll()
                 )
                 .authenticationProvider(authenticationProvider())
+                .sessionManagement((session) -> session
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .logout(LogoutConfigurer::permitAll);
 
         return http.build();

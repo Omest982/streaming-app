@@ -13,6 +13,7 @@ import java.util.UUID;
 @Setter
 @EqualsAndHashCode(exclude = "id")
 @Builder
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -24,6 +25,7 @@ public class User {
     private String username;
     private String email;
     private String password;
+    private String avatarUrl;
     private boolean isLive;
 
     private String serverUrl;

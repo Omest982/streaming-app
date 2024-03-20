@@ -21,4 +21,7 @@ spring:
 server:
   port: ${DISPATCHER_PORT}
 
+api-gateway:
+  port: ${API_GATEWAY_PORT}
+
 

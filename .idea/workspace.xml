@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Cors fix.">
+    <list default="true" id="8a56fc46-baa0-47b1-8ef1-fc452e3a8879" name="Changes" comment="Refactored code.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/filter/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/filter/RouteValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/org/example/filter/RouteValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/org/example/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/org/example/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/org/example/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-service/src/main/java/org/example/service/impl/AuthServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +86,7 @@
       <recent name="org.example.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DispatcherApplication">
+  <component name="RunManager" selected="Application.ApiGatewayApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -136,10 +141,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DispatcherApplication" />
-        <item itemvalue="Application.EurekaServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.DispatcherApplication" />
         <item itemvalue="Application.SecurityServiceApplication" />
+        <item itemvalue="Application.EurekaServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
       </list>
     </recent_temporary>
@@ -240,7 +245,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710845107727</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fix.">
+      <option name="closed" value="true" />
+      <created>1710849766849</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710849766849</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Refactored code.">
+      <option name="closed" value="true" />
+      <created>1710933078850</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710933078850</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,13 +290,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created security service logic.&#10;Refactored some code." />
     <MESSAGE value="Fixe." />
-    <MESSAGE value="Refactored code." />
     <MESSAGE value="Refactored docker." />
     <MESSAGE value="Refactored code.&#10;Refactored docker files." />
     <MESSAGE value="Fixed cors." />
     <MESSAGE value="Created filter for eureka." />
-    <MESSAGE value="Fix." />
     <MESSAGE value="Cors fix." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cors fix." />
+    <MESSAGE value="Fix." />
+    <MESSAGE value="Refactored code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored code." />
   </component>
 </project>
