@@ -1,6 +1,7 @@
 package org.example.service.impl;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.example.dto.AuthRequest;
 import org.example.dto.RegisterRequest;
 import org.example.entity.User;
@@ -19,6 +20,7 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class AuthServiceImpl implements AuthService {
     private final AuthenticationManager authManager;
     private final JwtService jwtService;
@@ -41,6 +43,7 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public boolean validateToken(String token) {
+        log.info("In process of validating!");
         return jwtService.isTokenValid(token);
     }
 

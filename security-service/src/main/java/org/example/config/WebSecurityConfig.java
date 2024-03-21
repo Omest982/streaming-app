@@ -31,9 +31,9 @@ public class WebSecurityConfig {
                 .authorizeHttpRequests((requests) -> requests
                                 .requestMatchers("/authenticate",
                                         "/register",
-                                        "/validate",
-                                        "/user/**").permitAll()
-                                //.anyRequest().permitAll()
+                                        "/validate").permitAll()
+                                        //"/user/**").permitAll()
+                                .anyRequest().permitAll()
                                 //.requestMatchers("/auth/**").permitAll()
                 )
                 .authenticationProvider(authenticationProvider())
